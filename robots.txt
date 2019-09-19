@@ -1,0 +1,2 @@
+﻿User-agent: *
+Sitemap: https://voobrazharoom-ru.itsinsta.site/sitemap.xml
