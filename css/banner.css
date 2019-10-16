@@ -18,9 +18,9 @@
 	height: 50px;
 	line-height: 50px;
 	border-radius: 50%;
-	color: #fff;
+	color: var(--btn-txt-color);
 	text-align: center;
-	background: #755ea2;
+	background: var(--elems-color);
 	font-size: 24px;
 	font-weight: bold;
 }
@@ -35,7 +35,7 @@
  	-ms-transform: translate(-50%, -50%);
  	-o-transform: translate(-50%, -50%);
  	transform: translate(-50%, -50%);
- 	background: #755ea2;
+ 	background: var(--elems-color);
 	border-radius: 50%;
 	-webkit-animation: pulse 2s infinite;
 	-o-animation: pulse 2s infinite;
@@ -89,7 +89,7 @@
 	font-size: 28px;
 	font-weight: 400;
 	text-align: center;
-	color: #262626;
+	color: var(--main-txt-color);
 	margin-bottom: 40px;
 }
 .banner__main-row{
@@ -106,7 +106,7 @@
 .banner__main-item{
 	display: block;
 	text-align: center;
-	color: #262626;
+	color: var(--main-txt-color);
 	font-size: 16px;
 	line-height: 1.4;
 	font-weight: 400;
@@ -129,14 +129,14 @@
 }
 .banner__main-item-ring{
 	margin: 0 auto 6px;
-	color: #755ea2;
+	color: var(--elems-color);
 	font-size: 50px;
  	-webkit-transition: color .25s ease;
  	-o-transition: color .25s ease;
  	transition: color .25s ease;
  
 }
-.banner__main-item:hover .banner__main-item-ring{color: #337ab7;}
+.banner__main-item:hover .banner__main-item-ring{color: var(--elems-hover);}
 .banner__overlay{
 	display: none;
 	position: fixed;
@@ -145,7 +145,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 109;
-	background: #262626;
+	background: var(--main-txt-color);
 	opacity: .6;
 }
 .banner__overlay.open{display: block;}

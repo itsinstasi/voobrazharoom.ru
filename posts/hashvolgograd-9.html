@@ -30,11 +30,11 @@
     <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#fff">
     
-    <link rel="image_src" href="https://scontent-arn2-2.cdninstagram.com/vp/5bc848589e03203b5cb1d50ad4b41482/5E383D3E/t51.2885-15/e35/29401264_1688443591237980_124980284138455040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" />
+    <link rel="image_src" href="https://scontent-arn2-2.cdninstagram.com/vp/7f45b8421f884f0d0c4d23b0adce94a9/5E5FCA3E/t51.2885-15/e35/29401264_1688443591237980_124980284138455040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" />
     <meta name="robots" content="INDEX, FOLLOW" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://voobrazharoom34.ru/posts/hashvolgograd-9.html" />
-    <meta property="og:image" content="https://scontent-arn2-2.cdninstagram.com/vp/5bc848589e03203b5cb1d50ad4b41482/5E383D3E/t51.2885-15/e35/29401264_1688443591237980_124980284138455040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" />
+    <meta property="og:image" content="https://scontent-arn2-2.cdninstagram.com/vp/7f45b8421f884f0d0c4d23b0adce94a9/5E5FCA3E/t51.2885-15/e35/29401264_1688443591237980_124980284138455040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="998"/>
     <meta property="og:image:height" content="997"/>
@@ -42,6 +42,9 @@
     <meta property="og:description" content="" />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="voobrazharoom.ru" />
+
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -69,7 +72,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -83,249 +86,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="воображарум">
-								<a href="../tags/./voobrazharum.html">
-									<div class="stories__slide-pic"><img src="../img/og/voobrazharum.png" alt="воображарум" /></div>
-									<div class="stories__slide-txt">воображарум</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="воображарум">
+										<a href="../tags/./voobrazharum.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/voobrazharum.png);"></div>
+											<div class="stories__slide-txt">воображарум</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="voobrazharoom">
+										<a href="../tags/./voobrazharoom.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/voobrazharoom.png);"></div>
+											<div class="stories__slide-txt">voobrazharoom</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="игрушки волгоград">
+										<a href="../tags/./igrushki-volgograd.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/igrushki-volgograd.png);"></div>
+											<div class="stories__slide-txt">игрушки волгоград</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="волгоград">
+										<a href="../tags/./volgograd.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/volgograd.png);"></div>
+											<div class="stories__slide-txt">волгоград</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="развивашки">
+										<a href="../tags/./razvivashki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/razvivashki.png);"></div>
+											<div class="stories__slide-txt">развивашки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="подарки волгоград">
+										<a href="../tags/./podarki-volgograd.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/podarki-volgograd.png);"></div>
+											<div class="stories__slide-txt">подарки волгоград</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дарим подарки">
+										<a href="../tags/./darim-podarki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/darim-podarki.png);"></div>
+											<div class="stories__slide-txt">дарим подарки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="vlg">
+										<a href="../tags/./vlg.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/vlg.png);"></div>
+											<div class="stories__slide-txt">vlg</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="магазин подарков">
+										<a href="../tags/./magazin-podarkov.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/magazin-podarkov.png);"></div>
+											<div class="stories__slide-txt">магазин подарков</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="пальчиковыйтеатр">
+										<a href="../tags/./pal-chikovyyteatr.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/pal-chikovyyteatr.png);"></div>
+											<div class="stories__slide-txt">пальчиковыйтеатр</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="игрушки длякуп ания">
+										<a href="../tags/./igrushki-dlyakup-aniya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/igrushki-dlyakup-aniya.png);"></div>
+											<div class="stories__slide-txt">игрушки длякуп ания</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="интересные подарки">
+										<a href="../tags/./interesnye-podarki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/interesnye-podarki.png);"></div>
+											<div class="stories__slide-txt">интересные подарки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="пархоменко5">
+										<a href="../tags/./parkhomenko5.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/parkhomenko5.png);"></div>
+											<div class="stories__slide-txt">пархоменко5</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="магазин длятебя">
+										<a href="../tags/./magazin-dlyatebya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/magazin-dlyatebya.png);"></div>
+											<div class="stories__slide-txt">магазин длятебя</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="детские игрушки">
+										<a href="../tags/./detskie-igrushki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/detskie-igrushki.png);"></div>
+											<div class="stories__slide-txt">детские игрушки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="декор">
+										<a href="../tags/./dekor.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dekor.png);"></div>
+											<div class="stories__slide-txt">декор</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="трансформеры">
+										<a href="../tags/./transformery.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/transformery.png);"></div>
+											<div class="stories__slide-txt">трансформеры</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="брелки">
+										<a href="../tags/./brelki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/brelki.png);"></div>
+											<div class="stories__slide-txt">брелки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="deglingos">
+										<a href="../tags/./deglingos.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/deglingos.png);"></div>
+											<div class="stories__slide-txt">deglingos</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мягкие игрушки">
+										<a href="../tags/./myagkie-igrushki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/myagkie-igrushki.png);"></div>
+											<div class="stories__slide-txt">мягкие игрушки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="декор волгоград">
+										<a href="../tags/./dekor-volgograd.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dekor-volgograd.png);"></div>
+											<div class="stories__slide-txt">декор волгоград</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="фламинго дляплаванья">
+										<a href="../tags/./flamingo-dlyaplavan-ya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/flamingo-dlyaplavan-ya.png);"></div>
+											<div class="stories__slide-txt">фламинго дляплаванья</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="интерактивные игрушки">
+										<a href="../tags/./interaktivnye-igrushki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/interaktivnye-igrushki.png);"></div>
+											<div class="stories__slide-txt">интерактивные игрушки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="товары для декора">
+										<a href="../tags/./tovary-dlya-dekora.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tovary-dlya-dekora.png);"></div>
+											<div class="stories__slide-txt">товары для декора</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="интересные игрушки">
+										<a href="../tags/./interesnye-igrushki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/interesnye-igrushki.png);"></div>
+											<div class="stories__slide-txt">интересные игрушки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="рукозвери">
+										<a href="../tags/./rukozveri.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/rukozveri.png);"></div>
+											<div class="stories__slide-txt">рукозвери</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="рюкзак волгоград">
+										<a href="../tags/./ryukzak-volgograd.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ryukzak-volgograd.png);"></div>
+											<div class="stories__slide-txt">рюкзак волгоград</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="надувнойпончик">
+										<a href="../tags/./naduvnoyponchik.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/naduvnoyponchik.png);"></div>
+											<div class="stories__slide-txt">надувнойпончик</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="школа">
+										<a href="../tags/./shkola.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkola.png);"></div>
+											<div class="stories__slide-txt">школа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="декор в детскую">
+										<a href="../tags/./dekor-v-detskuyu.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dekor-v-detskuyu.png);"></div>
+											<div class="stories__slide-txt">декор в детскую</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="voobrazharoom">
-								<a href="../tags/./voobrazharoom.html">
-									<div class="stories__slide-pic"><img src="../img/og/voobrazharoom.png" alt="voobrazharoom" /></div>
-									<div class="stories__slide-txt">voobrazharoom</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="игрушки волгоград">
-								<a href="../tags/./igrushki-volgograd.html">
-									<div class="stories__slide-pic"><img src="../img/og/igrushki-volgograd.png" alt="игрушки волгоград" /></div>
-									<div class="stories__slide-txt">игрушки волгоград</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="волгоград">
-								<a href="../tags/./volgograd.html">
-									<div class="stories__slide-pic"><img src="../img/og/volgograd.png" alt="волгоград" /></div>
-									<div class="stories__slide-txt">волгоград</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="развивашки">
-								<a href="../tags/./razvivashki.html">
-									<div class="stories__slide-pic"><img src="../img/og/razvivashki.png" alt="развивашки" /></div>
-									<div class="stories__slide-txt">развивашки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="подарки волгоград">
-								<a href="../tags/./podarki-volgograd.html">
-									<div class="stories__slide-pic"><img src="../img/og/podarki-volgograd.png" alt="подарки волгоград" /></div>
-									<div class="stories__slide-txt">подарки волгоград</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дарим подарки">
-								<a href="../tags/./darim-podarki.html">
-									<div class="stories__slide-pic"><img src="../img/og/darim-podarki.png" alt="дарим подарки" /></div>
-									<div class="stories__slide-txt">дарим подарки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="vlg">
-								<a href="../tags/./vlg.html">
-									<div class="stories__slide-pic"><img src="../img/og/vlg.png" alt="vlg" /></div>
-									<div class="stories__slide-txt">vlg</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="магазин подарков">
-								<a href="../tags/./magazin-podarkov.html">
-									<div class="stories__slide-pic"><img src="../img/og/magazin-podarkov.png" alt="магазин подарков" /></div>
-									<div class="stories__slide-txt">магазин подарков</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="пальчиковыйтеатр">
-								<a href="../tags/./pal-chikovyyteatr.html">
-									<div class="stories__slide-pic"><img src="../img/og/pal-chikovyyteatr.png" alt="пальчиковыйтеатр" /></div>
-									<div class="stories__slide-txt">пальчиковыйтеатр</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="игрушки длякуп ания">
-								<a href="../tags/./igrushki-dlyakup-aniya.html">
-									<div class="stories__slide-pic"><img src="../img/og/igrushki-dlyakup-aniya.png" alt="игрушки длякуп ания" /></div>
-									<div class="stories__slide-txt">игрушки длякуп ания</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="интересные подарки">
-								<a href="../tags/./interesnye-podarki.html">
-									<div class="stories__slide-pic"><img src="../img/og/interesnye-podarki.png" alt="интересные подарки" /></div>
-									<div class="stories__slide-txt">интересные подарки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="пархоменко5">
-								<a href="../tags/./parkhomenko5.html">
-									<div class="stories__slide-pic"><img src="../img/og/parkhomenko5.png" alt="пархоменко5" /></div>
-									<div class="stories__slide-txt">пархоменко5</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="магазин длятебя">
-								<a href="../tags/./magazin-dlyatebya.html">
-									<div class="stories__slide-pic"><img src="../img/og/magazin-dlyatebya.png" alt="магазин длятебя" /></div>
-									<div class="stories__slide-txt">магазин длятебя</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="детские игрушки">
-								<a href="../tags/./detskie-igrushki.html">
-									<div class="stories__slide-pic"><img src="../img/og/detskie-igrushki.png" alt="детские игрушки" /></div>
-									<div class="stories__slide-txt">детские игрушки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="декор">
-								<a href="../tags/./dekor.html">
-									<div class="stories__slide-pic"><img src="../img/og/dekor.png" alt="декор" /></div>
-									<div class="stories__slide-txt">декор</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="трансформеры">
-								<a href="../tags/./transformery.html">
-									<div class="stories__slide-pic"><img src="../img/og/transformery.png" alt="трансформеры" /></div>
-									<div class="stories__slide-txt">трансформеры</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="брелки">
-								<a href="../tags/./brelki.html">
-									<div class="stories__slide-pic"><img src="../img/og/brelki.png" alt="брелки" /></div>
-									<div class="stories__slide-txt">брелки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="deglingos">
-								<a href="../tags/./deglingos.html">
-									<div class="stories__slide-pic"><img src="../img/og/deglingos.png" alt="deglingos" /></div>
-									<div class="stories__slide-txt">deglingos</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мягкие игрушки">
-								<a href="../tags/./myagkie-igrushki.html">
-									<div class="stories__slide-pic"><img src="../img/og/myagkie-igrushki.png" alt="мягкие игрушки" /></div>
-									<div class="stories__slide-txt">мягкие игрушки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="декор волгоград">
-								<a href="../tags/./dekor-volgograd.html">
-									<div class="stories__slide-pic"><img src="../img/og/dekor-volgograd.png" alt="декор волгоград" /></div>
-									<div class="stories__slide-txt">декор волгоград</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="фламинго дляплаванья">
-								<a href="../tags/./flamingo-dlyaplavan-ya.html">
-									<div class="stories__slide-pic"><img src="../img/og/flamingo-dlyaplavan-ya.png" alt="фламинго дляплаванья" /></div>
-									<div class="stories__slide-txt">фламинго дляплаванья</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="интерактивные игрушки">
-								<a href="../tags/./interaktivnye-igrushki.html">
-									<div class="stories__slide-pic"><img src="../img/og/interaktivnye-igrushki.png" alt="интерактивные игрушки" /></div>
-									<div class="stories__slide-txt">интерактивные игрушки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="товары для декора">
-								<a href="../tags/./tovary-dlya-dekora.html">
-									<div class="stories__slide-pic"><img src="../img/og/tovary-dlya-dekora.png" alt="товары для декора" /></div>
-									<div class="stories__slide-txt">товары для декора</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="интересные игрушки">
-								<a href="../tags/./interesnye-igrushki.html">
-									<div class="stories__slide-pic"><img src="../img/og/interesnye-igrushki.png" alt="интересные игрушки" /></div>
-									<div class="stories__slide-txt">интересные игрушки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="рукозвери">
-								<a href="../tags/./rukozveri.html">
-									<div class="stories__slide-pic"><img src="../img/og/rukozveri.png" alt="рукозвери" /></div>
-									<div class="stories__slide-txt">рукозвери</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="рюкзак волгоград">
-								<a href="../tags/./ryukzak-volgograd.html">
-									<div class="stories__slide-pic"><img src="../img/og/ryukzak-volgograd.png" alt="рюкзак волгоград" /></div>
-									<div class="stories__slide-txt">рюкзак волгоград</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="надувнойпончик">
-								<a href="../tags/./naduvnoyponchik.html">
-									<div class="stories__slide-pic"><img src="../img/og/naduvnoyponchik.png" alt="надувнойпончик" /></div>
-									<div class="stories__slide-txt">надувнойпончик</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="школа">
-								<a href="../tags/./shkola.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkola.png" alt="школа" /></div>
-									<div class="stories__slide-txt">школа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="декор в детскую">
-								<a href="../tags/./dekor-v-detskuyu.html">
-									<div class="stories__slide-pic"><img src="../img/og/dekor-v-detskuyu.png" alt="декор в детскую" /></div>
-									<div class="stories__slide-txt">декор в детскую</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -352,20 +361,33 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/5bc848589e03203b5cb1d50ad4b41482/5E383D3E/t51.2885-15/e35/29401264_1688443591237980_124980284138455040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/935b5c5f3c94e0b8b42561531dd962d4/5E2F022B/t51.2885-15/e35/29401840_179594246016202_1366349948647374848_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/d4a3461a602724c46f33a90e1300fc2d/5E2E1A80/t51.2885-15/e35/29415708_2049766342014821_8091781397129199616_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/bc604effdb52739f5ba331d609946a5d/5E39A1FA/t51.2885-15/e35/29400721_1493020784153795_3790917291420418048_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/7f45b8421f884f0d0c4d23b0adce94a9/5E5FCA3E/t51.2885-15/e35/29401264_1688443591237980_124980284138455040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/935b5c5f3c94e0b8b42561531dd962d4/5E2F022B/t51.2885-15/e35/29401840_179594246016202_1366349948647374848_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/d4a3461a602724c46f33a90e1300fc2d/5E2E1A80/t51.2885-15/e35/29415708_2049766342014821_8091781397129199616_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/35c625c622be6a757cd4071daf433fb7/5E612EFA/t51.2885-15/e35/29400721_1493020784153795_3790917291420418048_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p></p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/Bg6ATl4DLhi/" 
 								onclick="ym(55571137, 'reachGoal', 'Instagram'); return true;"
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -442,7 +464,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>62</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/0421e6f18a692e74eebb550321fdd6f3/5E38F493/t51.2885-15/e35/58468623_2132158446877642_1319962055234561301_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="Совершай покупки!">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/4e7dd826c855e9ef6cc295f512a85240/5E608193/t51.2885-15/e35/58468623_2132158446877642_1319962055234561301_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="Совершай покупки!">
 								</div>
 								<div class="article-more__item-name">Совершай покупки!</div>
 							</a>
@@ -487,7 +509,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/2beea9563c28212d88b9ed4eb196fdee/5E1BB9B7/t51.2885-15/e35/42119678_314149769182418_3260222887084935564_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="Совершай покупки!">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/6f498213a52cb92639d86c0944d15b14/5E4346B7/t51.2885-15/e35/42119678_314149769182418_3260222887084935564_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="Совершай покупки!">
 								</div>
 								<div class="article-more__item-name">Совершай покупки!</div>
 							</a>
@@ -496,7 +518,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/d7fbee9443ab93ede793517f27f78c83/5E39B945/t51.2885-15/e35/41744704_299286157322776_8576975477393294287_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="«УМНЫЕ ГРЯДКИ» 🌱 🌿 🌵 •">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/7ccb34078fda013abe47760cce742202/5E614645/t51.2885-15/e35/41744704_299286157322776_8576975477393294287_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="«УМНЫЕ ГРЯДКИ» 🌱 🌿 🌵 •">
 								</div>
 								<div class="article-more__item-name">«УМНЫЕ ГРЯДКИ» 🌱 🌿 🌵 •</div>
 							</a>
@@ -549,11 +571,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->

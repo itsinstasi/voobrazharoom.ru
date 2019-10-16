@@ -3,7 +3,7 @@
 	margin-bottom: 30px;
 	font-size: 36px;
 	font-weight: 400;
-	color: #262626;
+	color: var(--main-txt-color);
 }
 .tag__item{
 	margin-bottom: 28px;
@@ -11,12 +11,12 @@
 }
 .tag__item-img img{width: 100%;}
 .tag__item-desc{
-	border: 1px solid #efefef;
+	border: 1px solid var(--brd-color);
     border-top: none;
     padding: 20px;
 	font-size: 14px;
 	line-height: 1.4;
-	color: #262626;
+	color: var(--main-txt-color);
 }
 .tag__item-desc h2{
 	font-size: 16px;

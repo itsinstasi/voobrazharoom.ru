@@ -12,7 +12,7 @@ html, body{
 }
 body{
     font: 16px/1.2 'Roboto', sans-serif;
-    color: #000;
+    color: var(--main-txt-color);
 	height: 100%;
     font-weight: 400;
     min-width: 310px;
@@ -20,7 +20,7 @@ body{
 	overflow-x: hidden;
     font-stretch: condensed;
     opacity: 1;	
-	background: #fafafa;
+	background: var(--main-bg-color);
 	font-synthesis: none;
     -moz-font-feature-settings: 'kern';
     -webkit-font-smoothing: antialiased;
@@ -153,7 +153,10 @@ img{
 	width: 100%;
     max-width: 975px;
 }
-.main{padding-top: 90px;}
+.main{
+	padding-top: 90px;
+	padding-bottom: 1px;
+}
 
 @media only screen and (max-width : 767px){
 	.container{padding: 0 16px;}
