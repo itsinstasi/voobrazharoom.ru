@@ -2,3 +2,5 @@
 Sitemap: https://voobrazharoom34.ru/sitemap.xml
 Disallow: /main.html
 Disallow: /main
+Disallow: /stories.html
+Disallow: /stories
